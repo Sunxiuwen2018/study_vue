@@ -1,16 +1,19 @@
 # study_vue
 study notes
-"""
+##一、git上传异常解决
+
 使用Git上传本地文件到github时，一直报错，终于被解决。
 
 git add .
+
 git commit -m"peTzxz"
+
 git push origin master
 
 当执行到push时，就会报错，报错代码如下：
 
 MacBook-Pro:数据库课程设计 Pett$ git push origin master
-To github.com:peTzxz/Property-management-system
+>>To github.com:peTzxz/Property-management-system
  ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'git@github.com:peTzxz/Property-management-system'
 hint: Updates were rejected because the remote contains work that you do
@@ -28,4 +31,5 @@ git pull --rebase origin master
 git push origin master
 
 便可上传成功
-"""
+***
+
