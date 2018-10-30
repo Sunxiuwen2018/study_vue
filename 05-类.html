@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<script>
+    class Person{
+        constructor(){
+            // 构造函数
+            this.type = 'person'
+        }
+        says(say){
+            console.log(this.type + '8888' +say)
+        }
+    }
+    let p1 = new Person()
+    p1.says('hello')
+    // 结果：person8888hello
+
+    class Man extends Person{
+        constructor(){
+            super(); // 自定义构造函数必须继承，才能有this
+            this.type = '男人'
+        }
+    }
+    let man = new Man()
+    man.says(6666)
+    // 结果：男人88886666
+</script>
+</body>
+</html>

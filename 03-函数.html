@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<script>
+    // 原生函数的定义
+    function fn(x) {
+        console.log(this)
+        // 此时this是当前窗口，this代表的是当前最近的调用者
+        return x + 1
+    }
+
+    // 定义对象，即为python中的字典，可用点取属性
+    let obj = {
+        fn:fn
+    }
+    let obj2 = {
+        play:'try',
+        obj:fn
+    }
+    fn(2)
+    obj.fn(2)
+    obj2.obj(2)
+
+    // 箭头函数
+    x => x+1
+
+</script>
+
+
+</body>
+</html>

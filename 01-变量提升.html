@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<!--声明变量，变量提升-->
+<div>
+
+</div>
+<script>
+    <!--var的全局变量提升-->
+    console.log(global)
+    var global = 'global'
+    console.log(global)
+
+    // 函数内变量提升
+    // function boy() {
+    //     if (1){
+    //         var test = 'test'
+    //     }
+    //     console.log(test)
+    // }
+    // boy()
+    // for循环中的let，let  name   关键字表示变量
+    var arry =[];
+    for (var i=0; i<10;i++){
+        console.log("dd",i)
+        arry[i] = function () {
+            console.log(i)
+        }
+    }
+    arry[5]()   //????不懂什么意思
+
+
+    // const定义的是常量，一旦定义了就不允许修改
+    const name = 'china';
+    // const name = '随意'
+
+</script>
+</body>
+</html>

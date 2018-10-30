@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<div>
+ <p></p>
+</div>
+<body>
+<script>
+    const person = {
+        name:'python',
+        age:'30'
+    }
+    const {name,age} = person
+    let my_div = document.getElementsByTagName('p')
+    console.log(my_div)
+    my_div.innerText= name   //？？？？
+    console.log(name, age)
+
+
+    const peos = ['xxx', 'yyy']
+    const [x,y] = peos
+    console.log(x,y)
+</script>
+</body>
+</html>

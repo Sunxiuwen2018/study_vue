@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app"></div>
+
+
+<script>
+    // 模板字符串，``
+    let age = 30;
+    let el =
+        `<div>
+            <ul>
+                <li>xxxx</li>
+                <li>yyyy</li>
+                <li>${age}</li>
+            </ul>
+        </div>`;
+    let el_div = document.getElementById('app');
+
+    console.log(el_div)
+    el_div.innerHTML=el;
+    // 字符串中添加变量
+    let a = 10;
+    let b = 5;
+    console.log(`answer:${a+b}, ${a*b}`)
+</script>
+</body>
+</html>
