@@ -1,6 +1,6 @@
 # study_vue
 study notes
-##一、git上传异常解决
+## 一、git上传异常解决
 
 使用Git上传本地文件到github时，一直报错，终于被解决。
 
