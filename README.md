@@ -1,7 +1,7 @@
 # study_vue
 study notes
 """
-使用Git上传本地文件到github时，一直报错，这个问题也困扰了我2天，终于被解决。
+使用Git上传本地文件到github时，一直报错，终于被解决。
 
 git add .
 git commit -m"peTzxz"
